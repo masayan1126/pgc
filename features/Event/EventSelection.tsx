@@ -372,7 +372,7 @@ export default function EventSelectionClient({ events }: EventSelectionClientPro
       )}
 
       {/* ナビゲーションボタン */}
-      <div className="flex justify-between mt-8">
+      <div className="flex justify-between mt-8 gap-3">
         <button
           onClick={handlePrevStep}
           disabled={currentStep === 1}
@@ -401,7 +401,7 @@ export default function EventSelectionClient({ events }: EventSelectionClientPro
       {(selectedEvents.morning.length > 0 || 
         selectedEvents.afternoon.length > 0 || 
         selectedEvents.evening.length > 0) && (
-        <div className="mt-12 p-4 border rounded-lg bg-gray-50">
+        <div className="mt-12 p-4 border rounded-lg">
           <h3 className="text-lg font-semibold mb-4">選択済みイベント ({formatDate(selectedDate)})</h3>
           
           {/* 朝のイベント */}
@@ -425,7 +425,7 @@ export default function EventSelectionClient({ events }: EventSelectionClientPro
                         </span>
                         <span className="font-medium">{event.name}</span>
                       </div>
-                      <p className="text-sm text-gray-600 mt-1 ml-7">
+                      <p className="text-sm mt-1 ml-7">
                         {formatDateTime(event.schedule.startTime)} 〜 
                         {formatDateTime(event.schedule.endTime)}
                       </p>
@@ -457,7 +457,7 @@ export default function EventSelectionClient({ events }: EventSelectionClientPro
                         </span>
                         <span className="font-medium">{event.name}</span>
                       </div>
-                      <p className="text-sm text-gray-600 mt-1 ml-7">
+                      <p className="text-sm mt-1 ml-7">
                         {formatDateTime(event.schedule.startTime)} 〜 
                         {formatDateTime(event.schedule.endTime)}
                       </p>
@@ -489,7 +489,7 @@ export default function EventSelectionClient({ events }: EventSelectionClientPro
                         </span>
                         <span className="font-medium">{event.name}</span>
                       </div>
-                      <p className="text-sm text-gray-600 mt-1 ml-7">
+                      <p className="text-sm mt-1 ml-7">
                         {formatDateTime(event.schedule.startTime)} 〜 
                         {formatDateTime(event.schedule.endTime)}
                       </p>
