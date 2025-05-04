@@ -217,6 +217,7 @@ export default function EventSelectionClient({ events }: EventSelectionClientPro
 
   // 時間のフォーマット関数
   const formatDateTime = (dateString: string) => {
+    if (!dateString) return '';
     const date = new Date(dateString);
     return new Intl.DateTimeFormat('ja-JP', {
       hour: '2-digit',
@@ -256,7 +257,7 @@ export default function EventSelectionClient({ events }: EventSelectionClientPro
           <h2 className="text-2xl font-bold">
             {stepTitles[currentStep as keyof typeof stepTitles]}
           </h2>
-          <p className="text-gray-600 mt-2">
+          <p className="mt-2">
             複数のイベントを選択することができます。優先順位は上から順になります。
           </p>
         </div>
@@ -265,7 +266,7 @@ export default function EventSelectionClient({ events }: EventSelectionClientPro
       {/* 日付選択 */}
       <div className="mb-8">
         <div className="max-w-md mx-auto">
-          <label htmlFor="date-select" className="block text-sm font-medium text-gray-700 mb-2">
+          <label htmlFor="date-select" className="block text-sm font-medium mb-2">
             日付を選択
           </label>
           <select
@@ -300,16 +301,16 @@ export default function EventSelectionClient({ events }: EventSelectionClientPro
                 <h3 className="text-lg font-semibold mb-2">{event.name}</h3>
                 
                 <div className="mb-3">
-                  <p className="text-gray-600 text-sm">
+                  <p className="text-sm">
                     {formatDateTime(event.schedule.startTime)} 〜 {formatDateTime(event.schedule.endTime)}
                   </p>
-                  <p className="text-gray-600 text-sm mt-1">
+                  <p className="text-sm mt-1">
                     最大参加可能人数: {event.maxAttendees}
                   </p>
-                  <p className="text-gray-600 text-sm mt-1">
+                  <p className="text-sm mt-1">
                     場所: {event.place}
                   </p>
-                  <p className="text-gray-600 text-sm mt-1">
+                  <p className="text-sm mt-1">
                     住所: {event.address}
                   </p>
                 </div>
@@ -334,7 +335,7 @@ export default function EventSelectionClient({ events }: EventSelectionClientPro
                 </div>
               </div>
               
-              <div className="p-4 bg-gray-50 border-t">
+              <div className="p-4 border-t">
                 <div className="flex justify-between items-center">
                   <span className={`px-2 py-1 rounded text-xs ${
                     event.timeOfDay === 'morning' ? 'bg-yellow-100 text-yellow-800' :

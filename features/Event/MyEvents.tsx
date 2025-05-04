@@ -63,6 +63,7 @@ export default function MyEventsClient() {
 
   // 時間のフォーマット関数
   const formatTime = (dateString: string) => {
+    if (!dateString) return '';
     const date = new Date(dateString);
     return new Intl.DateTimeFormat('ja-JP', {
       hour: '2-digit',
@@ -114,7 +115,7 @@ export default function MyEventsClient() {
         <div key={index} className="mb-10 border rounded-lg overflow-hidden shadow-md">
           <div className="bg-gray-100 p-4 flex justify-between items-center">
             <div>
-              <h2 className="text-lg font-semibold">
+              <h2 className="text-lg font-semibold text-gray-600">
                 イベントセット #{index + 1}
               </h2>
               <p className="text-sm text-gray-600 mt-1">
@@ -157,10 +158,10 @@ export default function MyEventsClient() {
                         <h3 className="font-medium">{event.name}</h3>
                       </div>
                       <div className="ml-7 mb-2">
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-sm">
                           {formatTime(event.schedule.startTime)} 〜 {formatTime(event.schedule.endTime)}
                         </p>
-                        <p className="text-gray-600 text-sm mt-1">
+                        <p className="text-sm mt-1">
                           最大参加可能人数: {event.currentAttendees} / {event.maxAttendees}
                         </p>
                       </div>
@@ -200,10 +201,10 @@ export default function MyEventsClient() {
                         <h3 className="font-medium">{event.name}</h3>
                       </div>
                       <div className="ml-7 mb-2">
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-sm">
                           {formatTime(event.schedule.startTime)} 〜 {formatTime(event.schedule.endTime)}
                         </p>
-                        <p className="text-gray-600 text-sm mt-1">
+                        <p className="text-sm mt-1">
                           最大参加可能人数: {event.maxAttendees}
                         </p>
                       </div>
@@ -243,10 +244,10 @@ export default function MyEventsClient() {
                         <h3 className="font-medium">{event.name}</h3>
                       </div>
                       <div className="ml-7 mb-2">
-                        <p className="text-gray-600 text-sm">
+                        <p className="text-sm">
                           {formatTime(event.schedule.startTime)} 〜 {formatTime(event.schedule.endTime)}
                         </p>
-                        <p className="text-gray-600 text-sm mt-1">
+                        <p className="text-sm mt-1">
                           最大参加可能人数: {event.maxAttendees}
                         </p>
                       </div>
