@@ -20,9 +20,9 @@ import EventSelectionClient from '../../features/Event/EventSelection';
 
 export default function EventsPage() {
 
-  const ngPlaeceNames = [
-    // "トレカGO!GO!",
-  ]
+  // const ngPlaeceNames = [
+  //   // "トレカGO!GO!",
+  // ]
 
 
   return (
