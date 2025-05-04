@@ -20,6 +20,10 @@ import EventSelectionClient from '../../features/Event/EventSelection';
 
 export default function EventsPage() {
 
+  const ngPlaeceNames = [
+    // "トレカGO!GO!",
+  ]
+
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-4">

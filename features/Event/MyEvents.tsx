@@ -275,6 +275,7 @@ export default function MyEventsClient() {
                         <Link href={event.googleMapsUrl} target="_blank" className="text-blue-600 hover:underline text-sm">
                           マップで見る
                         </Link>
+                        {/* 会員登録を必須にする */}
                         <Link href={
                           `https://www.google.com/maps/dir/?api=1&origin=${morningPrimaryEvent?.address ? morningPrimaryEvent.address : ''}&destination=${
                             afternoonPrimaryEvent?.address ? afternoonPrimaryEvent.address : ''
