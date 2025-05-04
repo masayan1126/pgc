@@ -1,7 +1,7 @@
 // app/my-events/MyEventsClient.tsx
 "use client";
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
 
 // イベントの型定義
@@ -17,6 +17,9 @@ interface Event {
   maxAttendees: number;
   currentAttendees: number;
   timeOfDay?: "morning" | "afternoon" | "evening";
+  place: string;
+  address: string;
+  eventDate: string;
 }
 
 // 保存されたイベントセットの型定義
@@ -31,6 +34,14 @@ interface SavedEventSet {
 export default function MyEventsClient() {
   const [savedEventSets, setSavedEventSets] = useState<SavedEventSet[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+
+  const morningPrimaryEvent = savedEventSets.length > 0 ? savedEventSets[0].morning[0] : null
+  const afternoonPrimaryEvent = savedEventSets.length > 0 ? savedEventSets[0].afternoon[0] : null
+  const eveningPrimaryEvent = savedEventSets.length > 0 ? savedEventSets[0].evening[0] : null
+
+
+  
+
 
   useEffect(() => {
     // コンポーネントがマウントされた時にローカルストレージからデータを取得
@@ -126,7 +137,7 @@ export default function MyEventsClient() {
               <span className="text-sm text-gray-600 mr-2">
                 保存日時: {formatSavedDate(eventSet.date)}
               </span>
-              <button 
+              <button
                 onClick={() => handleDeleteEventSet(index)}
                 className="text-red-600 hover:text-red-800 text-sm"
               >
@@ -146,7 +157,7 @@ export default function MyEventsClient() {
                   <span className="text-gray-500 italic">予定なし</span>
                 )}
               </div>
-              
+
               {eventSet.morning.length > 0 && (
                 <div className="ml-8 space-y-4">
                   {eventSet.morning.map((event, eventIndex) => (
@@ -189,7 +200,7 @@ export default function MyEventsClient() {
                   <span className="text-gray-500 italic">予定なし</span>
                 )}
               </div>
-              
+
               {eventSet.afternoon.length > 0 && (
                 <div className="ml-8 space-y-4">
                   {eventSet.afternoon.map((event, eventIndex) => (
@@ -215,7 +226,13 @@ export default function MyEventsClient() {
                         <Link href={event.googleMapsUrl} target="_blank" className="text-blue-600 hover:underline text-sm">
                           マップで見る
                         </Link>
+                        <Link href={`https://www.google.com/maps/dir/?api=1&origin=${morningPrimaryEvent?.address ? morningPrimaryEvent.address : ''}&destination=${afternoonPrimaryEvent?.address ? afternoonPrimaryEvent.address : ''}`} target="_blank" className="text-blue-600 hover:underline text-sm">
+                          朝のイベントの優先度1から昼のイベントの優先度1までのルートを確認する
+                        </Link>
+                        
+                        {/* <p className="text-sm hover:cursor-pointer"></p> */}
                       </div>
+
                     </div>
                   ))}
                 </div>
@@ -232,7 +249,7 @@ export default function MyEventsClient() {
                   <span className="text-gray-500 italic">予定なし</span>
                 )}
               </div>
-              
+
               {eventSet.evening.length > 0 && (
                 <div className="ml-8 space-y-4">
                   {eventSet.evening.map((event, eventIndex) => (
@@ -257,6 +274,13 @@ export default function MyEventsClient() {
                         </Link>
                         <Link href={event.googleMapsUrl} target="_blank" className="text-blue-600 hover:underline text-sm">
                           マップで見る
+                        </Link>
+                        <Link href={
+                          `https://www.google.com/maps/dir/?api=1&origin=${morningPrimaryEvent?.address ? morningPrimaryEvent.address : ''}&destination=${
+                            afternoonPrimaryEvent?.address ? afternoonPrimaryEvent.address : ''
+                          }&waypoints=${eveningPrimaryEvent?.address ? eveningPrimaryEvent.address : ''}`
+                        } target="_blank" className="text-blue-600 hover:underline text-sm">
+                          朝のイベントの優先度1から昼のイベントの優先度1を経由して夜のイベントの優先度1までのルートを確認する
                         </Link>
                       </div>
                     </div>
