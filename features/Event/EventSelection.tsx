@@ -74,7 +74,6 @@ export default function EventSelectionClient({ events }: EventSelectionClientPro
   const currentEvents = events.filter(event => {
     // イベントの日付を抽出（YYYY-MM-DD形式）
     const eventDate = new Date(event.schedule.startTime).toISOString().split('T')[0];
-    console.log(eventDate, event.name);
     
     
     
@@ -361,7 +360,7 @@ export default function EventSelectionClient({ events }: EventSelectionClientPro
           ))}
         </div>
       ) : (
-        <div className="text-center py-10 bg-gray-50 rounded-lg">
+        <div className="text-center py-10 bg-gray-50 rounded-lg px-4">
           <p className="text-gray-600">
             選択された日付の{currentStep === 1 ? '朝' : currentStep === 2 ? '昼' : '夜'}のイベントはありません。
           </p>

@@ -22,6 +22,7 @@ export default function EventsPage() {
 
   // const ngPlaeceNames = [
   //   // "トレカGO!GO!",
+  // トレカ専門店ポップタウン
   // ]
 
 

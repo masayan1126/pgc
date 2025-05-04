@@ -132,7 +132,7 @@ export const events: Event[] = [
     address: "〒532-0024 大阪府大阪市淀川区十三本町1丁目5-11アクシア十三本町3F",
   },
   {
-    id: "1",
+    id: "10",
     name: "ポケモンセンター　ポケカでカジュアルバトル！",
     pageUrl: "https://players.pokemon-card.com/event/detail/661481/1/14160/20250525/1417515",
     schedule: {
@@ -146,7 +146,7 @@ export const events: Event[] = [
     address: "〒542-8501 大阪府大阪市中央区心斎橋筋1-7-1 大丸心斎橋店 本館9階",
   },
   {
-    id: "1",
+    id: "11",
     name: "ポケモンセンター　ポケカでカジュアルバトル！",
     pageUrl: "https://players.pokemon-card.com/event/detail/661483/1/10896/20250525/1402587",
     schedule: {
@@ -160,7 +160,7 @@ export const events: Event[] = [
     address: "〒530-8202 大阪府大阪市北区梅田3-1-1　大丸梅田店　13階",
   },
   {
-    id: "2",
+    id: "12",
     name: "デッキそのままバトル　オープン",
     pageUrl: "https://players.pokemon-card.com/event/detail/706593/1/20857/20250525/1447452",
     schedule: {
@@ -174,7 +174,7 @@ export const events: Event[] = [
     address: "〒567-0888 大阪府茨木市駅前１丁目３番９号　生田ビル301号",
   },
   {
-    id: "2",
+    id: "13",
     name: "ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
     pageUrl: "https://players.pokemon-card.com/event/detail/706676/1/19850/20250525/1453530",
     schedule: {
@@ -188,7 +188,7 @@ export const events: Event[] = [
     address: "〒542-0075 大阪府大阪市中央区難波千日前13-13 　難波KHビル",
   },
   {
-    id: "2",
+    id: "14",
     name: "第14回 タッグマッチSRC!!",
     pageUrl: "https://players.pokemon-card.com/event/detail/686645/1/15146/20250525/1452463",
     schedule: {
@@ -201,4 +201,74 @@ export const events: Event[] = [
     place: "カード王（心斎橋店）内 対戦スペース",
     address: "〒542-0086 大阪府大阪市中央区西心斎橋2-10-32-3Fカード王（心斎橋店）",
   },
+  {
+    id: "15",
+    name: "ポケモンカードジム　ジムバトル",
+    pageUrl: "https://players.pokemon-card.com/event/detail/706790/1/10920/20250525/1441643",
+    schedule: {
+      startTime: "2025-05-25T13:00:00",
+      endTime: "",
+    },
+    googleMapsUrl: "",
+    maxAttendees: 32,
+    timeOfDay: "afternoon",
+    place: "カードラボ　なんば店",
+    address: "〒556-0005 大阪府大阪市浪速区日本橋3-8-16‐1階",
+  },
+  {
+    id: "16",
+    name: "ポケモンカードジム　ジムバトル",
+    pageUrl: "https://players.pokemon-card.com/event/detail/706884/1/19874/20250525/1438610",
+    schedule: {
+      startTime: "2025-05-25T13:00:00",
+      endTime: "2025-05-25T15:00:00",
+    },
+    googleMapsUrl: "https://www.google.com/maps/dir//34.659841,135.505732/@34.659841,135.505732,16z",
+    maxAttendees: 32,
+    timeOfDay: "afternoon",
+    place: "フルアヘッド大阪日本橋店",
+    address: "〒556-0005 大阪府大阪市浪速区日本橋４丁目１１−６ 　3F",
+  },
+  {
+    id: "17",
+    name: "ポケモンカードジム　ジムバトル",
+    pageUrl: "https://players.pokemon-card.com/event/detail/706896/1/14219/20250525/1428867",
+    schedule: {
+      startTime: "2025-05-25T13:00:00",
+      endTime: "2025-05-25T15:00:00",
+    },
+    googleMapsUrl: "https://www.google.com/maps/dir//34.665303,135.501688/@34.665303,135.501688,16z",
+    maxAttendees: 32,
+    timeOfDay: "afternoon",
+    place: "トレカキャピタルなんば　エディオンなんば本店",
+    address: "〒542-0076 大阪府大阪市中央区難波3-2-18　3Fトレカキャピタル",
+  },
+  {
+    id: "18",
+    name: "ポケモンカードジム　トレーナーズリーグ（オープンリーグ）",
+    pageUrl: "https://players.pokemon-card.com/event/detail/706915/1/18427/20250525/1441510",
+    schedule: {
+      startTime: "2025-05-25T13:00:00",
+      endTime: "2025-05-25T16:00:00",
+    },
+    googleMapsUrl: "https://www.google.com/maps/dir//34.662985,135.504746/@34.662985,135.504746,16z",
+    maxAttendees: 32,
+    timeOfDay: "afternoon",
+    place: "Bee本舗バトルタワー店",
+    address: "〒556-0011 大阪府大阪市浪速区難波中2-1-20",
+  },
+  {
+    id: "19",
+    name: "マーキスポケカバトル",
+    pageUrl: "https://players.pokemon-card.com/event/detail/686678/1/21037/20250525/1455218",
+    schedule: {
+      startTime: "2025-05-25T14:30:00",
+      endTime: "2025-05-25T17:00:00",
+    },
+    googleMapsUrl: "https://www.google.com/maps/dir//34.823563,135.46559/@34.823563,135.46559,16z",
+    maxAttendees: 32,
+    timeOfDay: "afternoon",
+    place: "カードショップマーキス",
+    address: "〒562-0041 大阪府箕面市桜4－1－24"
+  }
 ]
