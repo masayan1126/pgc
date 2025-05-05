@@ -173,7 +173,13 @@ export default function MyEventsClient() {
                           {formatTime(event.schedule.startTime)} 〜 {formatTime(event.schedule.endTime)}
                         </p>
                         <p className="text-sm mt-1">
-                          最大参加可能人数: {event.currentAttendees} / {event.maxAttendees}
+                          最大参加可能人数: {event.maxAttendees}
+                        </p>
+                        <p className="text-sm mt-1">
+                          場所: {event.place}
+                        </p>
+                        <p className="text-sm mt-1">
+                          住所: {event.address}
                         </p>
                       </div>
                       <div className="ml-7 flex space-x-3">
@@ -217,6 +223,12 @@ export default function MyEventsClient() {
                         </p>
                         <p className="text-sm mt-1">
                           最大参加可能人数: {event.maxAttendees}
+                        </p>
+                        <p className="text-sm mt-1">
+                          場所: {event.place}
+                        </p>
+                        <p className="text-sm mt-1">
+                          住所: {event.address}
                         </p>
                       </div>
                       <div className="ml-7 flex space-x-3">
@@ -266,6 +278,12 @@ export default function MyEventsClient() {
                         </p>
                         <p className="text-sm mt-1">
                           最大参加可能人数: {event.maxAttendees}
+                        </p>
+                        <p className="text-sm mt-1">
+                          場所: {event.place}
+                        </p>
+                        <p className="text-sm mt-1">
+                          住所: {event.address}
                         </p>
                       </div>
                       <div className="ml-7 flex space-x-3">
