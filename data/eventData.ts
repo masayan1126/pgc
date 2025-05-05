@@ -270,5 +270,75 @@ export const events: Event[] = [
     timeOfDay: "afternoon",
     place: "カードショップマーキス",
     address: "〒562-0041 大阪府箕面市桜4－1－24"
-  }
+  },
+  {
+    id: "20",
+    name: "ポケモンカードジム　ジムバトル",
+    pageUrl: "https://players.pokemon-card.com/event/detail/707183/1/12120/20250525/1452496",
+    schedule: {
+      startTime: "2025-05-25T15:00:00",
+      endTime: "",
+    },
+    googleMapsUrl: "https://www.google.com/maps/dir//34.700119,135.559166/@34.700119,135.559166,16z",
+    maxAttendees: 32,
+    timeOfDay: "afternoon",
+    place: "あっぷる 今福店",
+    address: "〒536-0002 大阪府大阪市城東区今福東1-11-27"
+  },
+  // {
+  //   id: "20",
+  //   name: "",
+  //   pageUrl: "",
+  //   schedule: {
+  //     startTime: "2025-05-25T14:30:00",
+  //     endTime: "2025-05-25T17:00:00",
+  //   },
+  //   googleMapsUrl: "",
+  //   maxAttendees: ,
+  //   timeOfDay: "afternoon",
+  //   place: "",
+  //   address: ""
+  // }
+  {
+    id: "21",
+    name: "ポケモンカードジム　ジムバトル",
+    pageUrl: "https://players.pokemon-card.com/event/detail/707254/1/19855/20250525/1453994",
+    schedule: {
+      startTime: "2025-05-25T15:00:00",
+      endTime: "2025-05-25T17:30:00",
+    },
+    googleMapsUrl: "https://www.google.com/maps/dir//34.693468,135.474549/@34.693468,135.474549,16z",
+    maxAttendees: 32,
+    timeOfDay: "afternoon",
+    place: "TSUTAYA野田阪神店",
+    address: "〒553-0007 大阪府 大阪市 福島区大開1-1-1 桂文ビル1・2F TSUTAYA野田阪神店内1階トレカ売り場"
+  },
+  {
+    id: "22",
+    name: "デッキそのままバトル　オープン",
+    pageUrl: "https://players.pokemon-card.com/event/detail/707361/1/10948/20250525/1449797",
+    schedule: {
+      startTime: "2025-05-25T16:00:00",
+      endTime: "2025-05-25T18:00:00",
+    },
+    googleMapsUrl: "https://www.google.com/maps/dir//34.84957,135.621941/@34.84957,135.621941,16z",
+    maxAttendees: 24,
+    timeOfDay: "afternoon",
+    place: "【CARDBOX】高槻店",
+    address: "〒569-0802 大阪府高槻市北園町19-12　４階"
+  },
+  {
+    id: "23",
+    name: "ポケモンカードジム　ジムバトル",
+    pageUrl: "https://players.pokemon-card.com/event/detail/707426/1/19850/20250525/1428611",
+    schedule: {
+      startTime: "2025-05-25T16:30:00",
+      endTime: "2025-05-25T18:30:00",
+    },
+    googleMapsUrl: "https://www.google.com/maps/dir//34.664196,135.502648/@34.664196,135.502648,16z",
+    maxAttendees: 64,
+    timeOfDay: "afternoon",
+    place: "GIRAFULLなんば店",
+    address: "〒542-0075 大阪府大阪市中央区難波千日前13-13 　難波KHビル"
+  },
 ]
