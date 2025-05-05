@@ -341,4 +341,102 @@ export const events: Event[] = [
     place: "GIRAFULLなんば店",
     address: "〒542-0075 大阪府大阪市中央区難波千日前13-13 　難波KHビル"
   },
+  {
+    id: "24",
+    name: "ポケモンカードジム　ジムバトル",
+    pageUrl: "https://players.pokemon-card.com/event/detail/707516/1/14773/20250525/1427486",
+    schedule: {
+      startTime: "2025-05-25T17:30:00",
+      endTime: "",
+    },
+    googleMapsUrl: "https://www.google.com/maps/dir//34.65727,135.501331/@34.65727,135.501331,16z",
+    maxAttendees: 64,
+    timeOfDay: "evening",
+    place: "ドラゴンスター日本橋3号店",
+    address: "〒556-0012 大阪府大阪市浪速区敷津東2-1-5"
+  },
+  {
+    id: "25",
+    name: "ポケモンカードジム　ジムバトル",
+    pageUrl: "https://players.pokemon-card.com/event/detail/707567/1/20970/20250525/1449853",
+    schedule: {
+      startTime: "2025-05-25T18:00:00",
+      endTime: "2025-05-25T20:00:00",
+    },
+    googleMapsUrl: "https://www.google.com/maps/dir//34.706963,135.499077/@34.706963,135.499077,16z",
+    maxAttendees: 32,
+    timeOfDay: "evening",
+    place: "トレカショップ竜のしっぽ　梅田NU茶屋町店",
+    address: "〒530-0013 大阪府大阪市北区茶屋町10番12号　NU茶屋町4F"
+  },
+  {
+    id: "26",
+    name: "ポケモンカードジム　ジムバトル",
+    pageUrl: "https://players.pokemon-card.com/event/detail/707587/1/10894/20250525/1426678",
+    schedule: {
+      startTime: "2025-05-25T18:00:00",
+      endTime: "2025-05-25T21:00:00",
+    },
+    googleMapsUrl: "https://www.google.com/maps/dir//34.705231,135.495758/@34.705231,135.495758,16z",
+    maxAttendees: 32,
+    timeOfDay: "evening",
+    place: "トレカショップ竜のしっぽ　大阪梅田店",
+    address: "〒530-0012 大阪府大阪市北区芝田2-3-23　メイプルビル芝田2階"
+  },
+  {
+    id: "27",
+    name: "ポケモンカードジム　トレーナーズリーグ（マスターリーグ）",
+    pageUrl: "https://players.pokemon-card.com/event/detail/707591/1/10893/20250525/1442093",
+    schedule: {
+      startTime: "2025-05-25T18:00:00",
+      endTime: "2025-05-25T21:00:00",
+    },
+    googleMapsUrl: "https://www.google.com/maps/dir//34.698812,135.499021/@34.698812,135.499021,16z",
+    maxAttendees: 32,
+    timeOfDay: "evening",
+    place: "トイコンプ　大阪駅前第3ビル店",
+    address: "〒530-0001 大阪府大阪市北区梅田1-1-3　2F-21"
+  },
+  {
+    id: "28",
+    name: "ポケモンカードジム　ジムバトル",
+    pageUrl: "https://players.pokemon-card.com/event/detail/707648/1/20022/20250525/1436741",
+    schedule: {
+      startTime: "2025-05-25T19:00:00",
+      endTime: "2025-05-25T21:00:00",
+    },
+    googleMapsUrl: "https://www.google.com/maps/dir//34.660849,135.506357/@34.660849,135.506357,16z",
+    maxAttendees: 24,
+    timeOfDay: "evening",
+    place: "トレカ専門店ポップタウン",
+    address: "〒556-0005 大阪府大阪市浪速区日本橋4丁目9-22　リファインビル4階"
+  },
+  {
+    id: "29",
+    name: "ポケモンカードジム　ジムバトル",
+    pageUrl: "https://players.pokemon-card.com/event/detail/707674/1/12188/20250525/1438294",
+    schedule: {
+      startTime: "2025-05-25T20:00:00",
+      endTime: "2025-05-25T22:00:00",
+    },
+    googleMapsUrl: "https://www.google.com/maps/dir//34.661123,135.503853/@34.661123,135.503853,16z",
+    maxAttendees: 16,
+    timeOfDay: "evening",
+    place: "BAR UNKNOWN trading card shop",
+    address: "〒556-0011 大阪府大阪市浪速区難波中2-7-7　ナンバＦＫビル2Ｆ"
+  },
+  {
+    id: "30",
+    name: "ポケモンカードジム　ジムバトル",
+    pageUrl: "https://players.pokemon-card.com/event/detail/707685/1/20824/20250525/1449300",
+    schedule: {
+      startTime: "2025-05-25T20:30:00",
+      endTime: "2025-05-25T22:00:00",
+    },
+    googleMapsUrl: "https://www.google.com/maps/dir//34.662013,135.500699/@34.662013,135.500699,16z",
+    maxAttendees: 32,
+    timeOfDay: "evening",
+    place: "コーギーアール難波店",
+    address: "〒556-0011 大阪府大阪市浪速区難波中2-8-91 　中川ビル　3階"
+  },
 ]
